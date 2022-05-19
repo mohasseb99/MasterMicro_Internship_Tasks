@@ -14,7 +14,8 @@ int main() {
     vector<vector<vector<int>>> matrix_3d (n, vector<vector<int>>(m, vector<int>(p)));
 
     int num;
-
+    
+    // take input from user and insert it in 3D matrix
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             for (int k = 0; k < p; ++k) {
@@ -28,10 +29,9 @@ int main() {
     vector<int> vector_1d(q);
     matrix_flatten(matrix_3d, vector_1d);
 
-    for(int y = 0; y < q; y++){
-        cout << vector_1d[y] << " ";
-    }
-
+    
+    // to check whether getIndex1D is true or not 
+    // we iterate through every element in 3D matrix and give getIndex1D these parameters: i j k then check if vector1D[getten index] = matrix3D[i][j][k]
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             for (int k = 0; k < p; ++k) {

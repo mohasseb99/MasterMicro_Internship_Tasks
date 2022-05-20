@@ -13,4 +13,4 @@ The 1D vector is of size q and is indexed by y. <br/>
 </ol>
 
 <p> I used C++ to conert 3D matrix to 1D vector </p>
-<p> to get index of element in 1D vector we use this eqn: n*n*i + m*j + k </p>
+<p> to get index of element in 1D vector we use this eqn: n*m*i + m*j + k </p>

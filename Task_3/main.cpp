@@ -61,5 +61,5 @@ void matrix_flatten(vector<vector<vector<int>>> &matrix_3d, vector<int> &vector_
 }
 
 int getIndex1D(int i, int j, int k, int n, int m, int p){
-    return i*n*n + j*m + k;
+    return i*m*n + j*m + k;
 }
